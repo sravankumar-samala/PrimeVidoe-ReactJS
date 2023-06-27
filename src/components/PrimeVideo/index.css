@@ -1,0 +1,50 @@
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  color: white;
+}
+@media (max-width: 678px) {
+  .container {
+    max-width: 80%;
+  }
+}
+h1 {
+  font-size: clamp(1rem, 5vw, 2rem);
+}
+.slick-slider {
+  margin-bottom: 5em;
+}
+.slick-slide {
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+.slick-slide > div {
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.thumbnail img {
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+/* .slick-next,
+.slick-prev {
+  background-color: black;
+  border-radius: 50%;
+} */
+
+.video-player {
+  background-color: #d6e1ee;
+  padding: 3em;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.close-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 1em;
+  right: 1.5em;
+}
