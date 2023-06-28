@@ -44,13 +44,24 @@ export default function PrimeVideo(props) {
         onClose={() => setVideoUrl('')}
       >
         {close => (
-          <div className="video-player">
+          <div className="player-wrapper">
             <IoMdClose
               className="close-icon"
               data-testid="closeButton"
               onClick={close}
             />
-            <ReactPlayer url={videoUrl} controls playing />
+            <ReactPlayer
+              //   width="100%"
+              //   height="100%"
+              url={videoUrl}
+              controls
+              playing
+              config={{
+                youtube: {
+                  playerVars: {showinfo: 1},
+                },
+              }}
+            />
           </div>
         )}
       </Popup>
